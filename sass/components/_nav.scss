@@ -1,3 +1,19 @@
+.site-nav {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-nav {
+  display: flex;
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .site-nav__item {
   color: var(--title-color);
   font-weight: 500;
@@ -24,15 +40,6 @@
 
 .site-nav li:not(:last-child) {
   margin-right: 50px;
-}
-
-.site-nav {
-  display: flex;
-}
-
-.main-nav {
-  display: flex;
-  margin-left: auto;
 }
 
 .site-nav__item:hover,
