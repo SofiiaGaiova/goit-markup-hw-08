@@ -24,6 +24,11 @@
 .social-network {
   margin-top: 16px;
   display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
 }
 
 .social-network__link:hover .social-network__icon,
