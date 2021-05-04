@@ -12,6 +12,13 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
 }
 
 .site-nav__item {
@@ -85,6 +92,10 @@
   display: flex;
   align-items: center;
   transition: color 250ms var(--cubic);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 10px;
+  }
 }
 
 .main-nav li:not(:last-child) {
