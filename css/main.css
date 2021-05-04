@@ -804,6 +804,7 @@ p {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--cubic);
+  z-index: 110;
 }
 
 .backdrop.is-hidden {
@@ -820,13 +821,18 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 521px;
+  width: 450px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms var(--cubic);
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__title {
@@ -939,6 +945,7 @@ p {
 .checkbox__contract {
   color: var(--accent-color);
   text-decoration: underline;
+  display: contents;
 }
 
 .modal__button {
@@ -1264,6 +1271,7 @@ p {
   background-color: #fff;
   padding: 48px 40px;
   display: flex;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 768px) {
