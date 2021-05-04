@@ -1149,8 +1149,19 @@ p {
 }
 
 .filter {
-  justify-content: center;
   margin-bottom: 34px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__item:not(:last-child) {
@@ -1165,7 +1176,19 @@ p {
 }
 
 .portfolio {
-  --items: 3;
+  --items: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    --items: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    --items: 3;
+  }
 }
 
 .portfolio__link {
